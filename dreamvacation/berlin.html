@@ -1,0 +1,394 @@
+﻿<!DOCTYPE>
+
+<html>
+
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" 
+		
+		rel="stylesheet">
+
+<style>
+
+	
+	#source {
+		
+		padding-top: 30px;
+		
+		font-size: 13px;
+		
+		padding-right: auto;
+		
+		padding-left: auto;
+		
+		text-align: center;
+	
+	}
+	
+	
+	
+	#architecture {
+		
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+		
+		font-size: 17px;
+	
+		margin: auto;
+		
+		width: 70%;
+		
+		padding-top: 25px;
+		
+		text-align: left;
+		
+		line-height: 1.5;
+		
+		padding-right: 20px;
+		
+		padding-left: 20px:
+	
+
+	}
+	
+	
+
+	#googleMap {
+		
+		margin-right: auto;
+		
+		margin-left: auto;	
+		
+		text-align: center;
+		
+	
+	}
+	
+	
+
+	h1 {
+		
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+		font-size: 45px;
+		
+		font-weight: bold;
+		
+		padding-right: 20cm
+	
+
+	}
+	
+
+	#explain {
+		
+		margin: auto;
+		
+		width: 70%;
+		
+		background-color: white;
+		
+		text-align: left;
+		
+		line-height: 1.5;
+		
+		padding-right: 20px;
+		
+		padding-left: 20px;
+		
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+		
+		font-size: 17px;
+	
+
+	}
+	
+	
+
+	body {	
+		
+		background-color: white;
+	
+	} 
+	
+	
+
+	ul {
+		
+		display: inline-block;
+		
+		list-style-type: none;
+		
+		padding: 0;
+		
+		overflow: hidden;
+	
+	}
+		
+	
+
+	#navbar {
+		
+		text-align: center;
+		
+		margin-left: auto;
+		
+		margin-right: auto;	
+	
+	}
+		
+	
+	
+	li a { 
+		
+		display: block;
+		
+		color: black; 
+		
+		text-align: center;
+		
+		padding: 15px 16px;
+		
+		padding-right: 73px;
+		
+		padding-left: 73px;	
+		
+		text-decoration: none; 
+		
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+		font-size: 22px;
+		
+		font-weight: bold;
+	
+	}
+			
+	
+
+	li {
+		
+		float: left;		
+	
+	}
+			
+	
+
+	li:last-child {
+		
+		border-bottom: 3px solid #fff;
+		
+		border-top: 3px solid #fff;
+	
+	}
+		 	
+	
+
+	li a.active {
+		
+		background-color: #000000	
+		
+		color: white		
+	
+	}
+		
+	
+
+	li a:hover:not(.active) {
+		
+		background-color: #000;
+		
+		color: white;
+	
+	}
+	
+	
+
+	#tower {
+		 
+		display: inline-block;
+		
+		margin: 10px;	
+	
+	}
+	
+	
+
+	#ttower {
+		 
+		vertical-align: top;
+		 
+		margin-left: auto;
+		 
+		margin-right: auto;
+		 
+		padding-left: 120px;
+	
+	}
+	
+	
+
+	#tcaption {
+		
+		padding-top: 18px;
+    	
+		text-align: center;
+    	
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+	
+	}
+	
+	
+
+	#gate {
+		
+		display: inline-block;
+		
+		margin: 10px;
+	
+	}
+	
+	
+
+	#gateimage {
+		
+		vertical-align: top;
+		
+		margin-left: auto;
+		
+		margin-right: auto;
+		
+		padding-left: 90px;
+	
+	}
+	
+	
+
+	#bcaption {
+		
+		padding-top: 18px;
+		
+		text-align: center;
+		
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+	
+	}
+
+</style>
+
+</head>
+
+<script>
+	
+	function myMap() {
+		
+		var mapCenter = new google.maps.LatLng(52.5065133,13.1445545,);
+		
+		var mapProp= {
+		
+		center:mapCenter,
+		
+		zoom:6,
+		
+		};
+		
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp); 
+		
+		var berlin = new google.maps.LatLng(52.5200,13.4050,);
+		
+		var berlinMarker = new google.maps.Marker({position: berlin});
+		
+		berlinMarker.setMap(map);
+    
+	}
+</script>
+
+<body>
+
+<div id="navbar"> 
+
+<ul>
+	
+	<li><a href="dreamvacation.html">HOME</a></li>
+	
+	<li><a class="active" href="#berlin">BERLIN</a></li>
+	
+	<li><a href="amsterdam.html">AMSTERDAM</a></li>
+	
+	<li><a href="manchester.html">MANCHESTER</a></li>
+	
+	<li><a href="sources.html">SOURCES</a></li>
+</ul>
+
+</div>
+
+<div id="explain">
+	
+<h1>Berlin</h1>
+	
+	<p>Known as the capital of Germany, Berlin is one of the most intriguing cities in Europe. The city lies on the Spree 
+	
+	River which cuts through the center of the Berlin. The city is located approximately 112 miles south from the Baltic Sea, thus 
+
+	making the city's climate a bit cold. With its notorious history-specifically during the 20th century-Berlin continues to be 
+	
+	one of the most influential cities. Pieces of Berlin's history still remain including parts of what was once the Berlin Wall.
+	
+	Culture is also a predominant aspect of this city. From art to literature and to even science, Berlin has made a 
+	
+	significant contribution to the world. In fact, Albert Einstein lived in Berlin for approximately 18 years.</p>
+
+</div>
+
+
+<div id="googleMap" style="width:70%;height:400px;">
+
+</div>
+
+
+<div id="architecture">
+	
+	<p>Berlin also has a wide variety of architecture. From incredibly modern and contemporary to historic and-odd to say-but Nazi architecture that
+	
+	was left after World War II, Berlin ceases to never get boring. The Fernsehturm (The Television Tower) and the Brandenburg Gate are probably the most well-known buildings 
+	
+	in the city. These two buildings demonstrate the array of diverse architecture within Berlin. With the Brandenburg Gate being an 18th century arc that is one of 
+	
+	the most recognizable landmarks in Europe, and The Fernsehturm, built as a reminder of the Sputnik Satellites and socialism shows how the history of this city is incorporated
+	within every building.</p>
+	
+	<figure id="tower">
+		
+		<img id="ttower" src="tower.jpg" style="height:260px"/>
+			
+		<figcaption id="tcaption">The Fernsehturm</figcaption>
+	
+	</figure>
+	
+	
+	<figure id="gate">
+		
+		<img id="gateimage" src="Brandenburg.jpg" style="height:260px"/>
+			
+		<figcaption id="bcaption">The Brandenburg Bridge</figcaption>
+	
+	</figure>
+
+	
+
+</div>
+<div id="source">
+	
+	<p>image: https://chrismartinphotography.files.wordpress.com/2016/08/fernsehturm-de-berlc3adn-in-der-nacht-c2a9-christopher-martin-9510.jpg</p>
+	
+	<p>image: http://www.oddcities.com/wp-content/uploads/2015/01/Brandenburg.jpg</p>
+
+</div>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlmyZ8EPKZ62ionrkB816827lEID7dkM&callback=myMap"></script>
+
+
+
+</body>
+
+</html>

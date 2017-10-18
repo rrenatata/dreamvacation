@@ -1,0 +1,268 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" 
+		
+		rel="stylesheet">
+
+<style>
+
+	
+	#googleMap {
+		
+		margin-right: auto;
+		
+		margin-left: auto;	
+		
+		text-align: center;
+		
+	
+	}
+
+	
+	
+	h1 {
+		
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+		font-size: 45px;
+		
+		font-weight: bold;
+		
+		padding-right: 20cm
+	
+
+	}
+	
+
+	#explain {
+		
+		margin: auto;
+		
+		width: 70%;
+		
+		background-color: white;
+		
+		text-align: left;
+		
+		line-height: 1.5;
+		
+		padding-right: 20px;
+		
+		padding-left: 20px;
+		
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+		
+		font-size: 17px;
+	
+
+	}
+	
+	
+
+	body {	
+		
+		background-color: white;
+	
+	} 
+	
+	
+
+	ul {
+		
+		display: inline-block;
+		
+		list-style-type: none;
+		
+		padding: 0;
+		
+		overflow: hidden;
+	
+	}
+		
+	
+
+	#navbar {
+		
+		text-align: center;
+		
+		margin-left: auto;
+		
+		margin-right: auto;	
+	
+	}
+		
+	
+	
+	li a { 
+		
+		display: block;
+		
+		color: black; 
+		
+		text-align: center;
+		
+		padding: 15px 16px;
+		
+		padding-right: 73px;
+		
+		padding-left: 73px;	
+		
+		text-decoration: none; 
+		
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+		font-size: 22px;
+		
+		font-weight: bold;
+	
+	}
+			
+	
+
+	li {
+		
+		float: left;		
+	
+	}
+			
+	
+
+	li:last-child {
+		
+		border-bottom: 3px solid #fff;
+		
+		border-top: 3px solid #fff;
+	
+	}
+		 	
+	
+
+	li a.active {
+		
+		background-color: #000000	
+		
+		color: white		
+	
+	}
+		
+	
+
+	li a:hover:not(.active) {
+		
+		background-color: #000;
+		
+		color: white;
+	
+	}
+	
+
+	#city {
+		display: inline-block;
+		
+		margin: 10px;	
+	
+	}
+	
+	
+
+	#sky {
+		vertical-align: top;
+		 
+		margin-left: auto;
+		 
+		margin-right: auto;
+		 
+		padding-left: 380px;
+	
+	}
+
+	#wow {
+		padding-top: 18px;
+    	
+		padding-left: 525px;
+    	
+		font-family: "Arial", Arial, Helvetica, sans-serif;
+
+	}
+</style>
+
+</head>
+
+<script>
+	
+	function myMap() {
+		
+		var mapCenter = new google.maps.LatLng(53.4721635,-2.3635461);
+		
+		var mapProp= {
+		
+		center:mapCenter,
+		
+		zoom:6,
+		
+		};
+		
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp); 
+		
+		var berlin = new google.maps.LatLng(53.4721635,-2.3635461);
+		
+		var berlinMarker = new google.maps.Marker({position: berlin});
+		
+		berlinMarker.setMap(map);
+    
+	}
+</script>
+
+<body>
+
+<div id="navbar"> 
+
+<ul>
+	
+	<li><a href="dreamvacation.html">HOME</a></li>
+	
+	<li><a href="berlin.html">BERLIN</a></li>
+	
+	<li><a href="amsterdam.html">AMSTERDAM</a></li>
+	
+	<li><a class="active" href="#manchester">MANCHESTER</a></li>
+	
+	<li><a href="sources.html">SOURCES</a></li>
+</ul>
+
+</div>
+
+<div id="explain">
+	
+
+<h1>Manchester</h1>
+
+	<p>Manchester is filled with rich hisory. Located in the UK, it is the origin of industrial revolution in Great Britain.
+	An abundance of musical groups and bands also originated from this city. Well-known artists include Morrisey from 80s band The Smiths, New Order, and
+	a more recent band, The 1975.</p>
+	<figure id="city">
+		<img id="sky"src="manchester.jpg" style="height:260px"/>
+			
+		<figcaption id="wow">Manchester</figcaption>
+	
+	</figure>
+	
+	
+
+
+</div>
+
+
+<div id="googleMap" style="width:70%;height:400px;">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlmyZ8EPKZ62ionrkB816827lEID7dkM&callback=myMap"></script>
+
+
+
+</body>
+
+</html>	
